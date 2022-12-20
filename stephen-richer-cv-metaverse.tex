@@ -1,0 +1,124 @@
+\documentclass{cv} % Use the custom resume.cls style
+
+\usepackage[left=0.4 in,top=0.4in,right=0.4 in,bottom=0.4in]{geometry} % Document margins
+\newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}} 
+\newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
+\name{Stephen Richer} % Your name
+% You can merge both of these into a single line, if you do not have a website.
+\address{+44(7513) 065 917 \\ London, U.K.} 
+\address{\href{mailto:stephen.richer@proton.me}{stephen.richer@proton.me} \\ \href{https://www.linkedin.com/in/stephenricher/}{linkedin.com/in/stephenricher} \\ \href{https://github.com/StephenRicher}{github.com/StephenRicher}}  %
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	OBJECTIVE
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{OBJECTIVE}
+
+{Python programmer and data scientist currently working with the NHS to build best practise analytical workflows and machine learning models to address health inequality. Seeking a full-time position in software engineering.}
+
+%----------------------------------------------------------------------------------------
+% TECHINICAL STRENGTHS	
+%----------------------------------------------------------------------------------------
+\begin{rSection}{SKILLS}
+
+\begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
+Programming Languages & Python (NumPy, Pandas, Scikit-learn), SQL, Git, Bash, C++, Java
+\\
+Data Science & Supervised Machine Learning (Decision Trees, Regression), Tableu
+\\
+Cloud Platforms & Microsoft Azure
+\\
+Soft Skills & Communication, Critical Thinking, Problem Solving, Adaptability
+\\
+\end{tabular}\\
+\end{rSection}
+
+
+\end{rSection}
+
+\begin{rSection}{EXPERIENCE}
+
+\textbf{Data Scientist Intern} \hfill Jun 2022 - Present \\
+NHS England \hfill \textit{London, U.K}
+ \begin{itemize}
+    \itemsep -3pt {} 
+    \item Built and deployed an AutoML pipeline, implementing CatBoost and Logistic Regression, for predicting healthcare appointment non-attendance at regional NHS trusts. Available at: \href{https://github.com/nhsx/dna-risk-predict}{github.com/nhsx/dna-risk-predict}
+    \item Developed ETL data engineering pipelines for processing and aggregating healthcare and demographic data from multiple public source.
+    \item Collaborated with NHS stakeholders and analysts to design and implement reproducible analytical workflows for studying healthcare inequalities.
+    \item Utilised a variety of statistical approaches and hypothesis tests, including permutation testing and partial correlation, to robustly analyse complex and biased real-world healthcare data with numerous confounding variables.
+ \end{itemize}
+
+\textbf{Research Software Skills Educator} \hfill Apr 2019 - Jun 2022 \\
+University of Bath, Doctoral College \hfill \textit{Bath, U.K}
+ \begin{itemize}
+    \itemsep -3pt {} 
+    \item Developed and delivered materials to train doctoral students in research software engineering best practises.
+    \item Curriculum: Python programming and style (PEP8), version control, testing and continuous integration. Available at: \href{https://github.com/Research-Software-Skills-Bath}{github.com/Research-Software-Skills-Bath}
+ \end{itemize}
+
+\textbf{Doctoral Researcher, Biology \& Mathematics} \hfill Oct 2018 - Jun 2022 \\
+University of Bath \hfill \textit{Bath, U.K}
+ \begin{itemize}
+    \itemsep -3pt {} 
+    \item Conducted independent research and developed novel computational tools to understand how the structure of DNA impacts cellular function.
+    \item Developed HiCFlow, a user-friendly analytical workflow for conducting robust and reproducible bioinformatics analysis. Available at: \href{https://github.com/StephenRicher/HiCFlow}{github.com/StephenRicher/HiCFlow}
+    \item Supervised final-year undergraduate students completing projects in computational biology.
+    \item Presented research at national and international conferences.
+    \item Awarded best final-year PhD presentation at the Bath Departmental Research Day.
+ \end{itemize}
+
+\textbf{Technical Support (IT Services)} \hfill Oct 2017 - Sep 2018 \\
+University of Manchester, Hornet \hfill \textit{Manchester, U.K}
+ \begin{itemize}
+    \itemsep -3pt {} 
+    \item Provided IT support, education and security guidance for residential students.
+ \end{itemize}
+
+\textbf{Study Coordinator} \hfill Oct 2016 - Jul 2017 \\
+MAC Clinical Research \hfill \textit{Leeds, U.K}
+ \begin{itemize}
+    \itemsep -3pt {} 
+    \item Oversaw a phase 3 clinical trial investigating a novel treatment for Alzheimer’s disease.
+ \end{itemize}
+
+\textbf{Clinical Trials Assistant} \hfill Oct 2015 - Oct 2016 \\
+MAC Clinical Research \hfill \textit{Leeds, U.K}
+
+\end{rSection} 
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Education}
+
+{\bf PhD, Biology \& Mathematics}, University of Bath \hfill {Expected 2022} \\
+Mathematical and bioinformatics-based tools to explore the impact of gene editing on the geometric principles governing the 3D structure of the genome.
+
+{\bf MSc, Bioinformatics \& Systems Biology (Distinction)}, University of Manchester \hfill {2017 - 2018}
+
+{\bf BSc, Biology (First)}, University of Bath \hfill {2011 - 2015}
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{PROJECTS}
+\vspace{-1.25em}
+\item \textbf{Real World Data Validation with \textit{validatum}} {Lightweight, user-friendly Python module to automatically detect and flag suspicious data inconsistencies and common data entry errors within real world data. \\
+Available at: \href{https://pypi.org/project/validatum/}{pypi.org/project/validatum}}
+\item \textbf{Secure Data Encryption with \textit{datasafe}.} {Python based command-line utility for encryption of text files and encryption of Pandas DataFrames while preserving datatype. \\
+Available at: \href{https://pypi.org/project/datasafe/}{pypi.org/project/datasafe}}
+\item \textbf{Data Science Best Practises - The Titanic Dataset.} {Wrote a popular Kaggle notebook, describing best practise approaches for performing supervised tabular classification using Scikit-learn. \\
+Available at: \href{https://www.kaggle.com/code/stever4/titanic-top-5-good-data-science-practices}{Kaggle - Titanic Data Science}}
+\end{rSection} 
+
+%----------------------------------------------------------------------------------------
+
+
+\end{document}
+

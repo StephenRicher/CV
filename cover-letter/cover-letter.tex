@@ -1,0 +1,74 @@
+% Project:  TeX Cover Letter Template
+% Author:   Sid Lacy
+
+% EDIT info.tex, body.tex
+
+\documentclass[12pt]{letter}
+\usepackage[utf8]{inputenc}
+\usepackage[empty]{fullpage}
+\usepackage[hidelinks]{hyperref}
+\usepackage{graphicx}
+\usepackage{fontawesome}
+\usepackage{eso-pic}
+\usepackage{charter}
+
+\addtolength{\topmargin}{-0.5in}
+\addtolength{\textheight}{1.0in}
+\definecolor{gr}{RGB}{225,225,225}
+
+% Personal information
+\newcommand{\myname}{Stephen Richer}
+\newcommand{\mytitle}{Data Scientist}
+\newcommand{\myemail}{stephen.richer@proton.me}
+\newcommand{\mylinkedin}{stephenricher}
+\newcommand{\myphone}{+44 7513 065 917}
+\newcommand{\mylocation}{London, UK}
+\newcommand{\recipient}{Hiring Manager}
+\newcommand{\greeting}{Dear}
+\newcommand{\closer}{Kind Regards}
+
+\input{info}
+
+\begin{document}
+
+
+% Header
+\begin{center}
+{\fontsize{28}{0}\selectfont\scshape \myname}
+
+\href{mailto:\myemail}{\faEnvelope\enspace \myemail}\hfill
+\href{https://linkedin.com/in/\mylinkedin}{\faLinkedin\enspace linkedin.com/in/\mylinkedin}\hfill
+\href{tel:\myphone}{\faPhone\enspace \myphone}\hfill
+\faMapMarker\enspace \mylocation
+\end{center}
+
+\vspace{0.2in}
+
+% Opening block
+\today\\
+
+\vspace{-0.1in}\recipient\\
+\company\\
+\street\\
+\city, \state\ \zip\\
+
+\vspace{-0.1in}\greeting\ \recipient,\\
+
+% Body
+\vspace{-0.1in}\setlength\parindent{24pt}
+\noindent\input{cover-letter-body}
+
+% Closer
+\vspace{0.1in}
+\vfill
+
+\begin{flushright}
+\closer,
+
+\vspace{-0.1in}\includegraphics[width=1in]{signature.png}\vspace{-0.1in}
+
+\myname\\
+\mytitle
+\end{flushright}
+
+\end{document}
